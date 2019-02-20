@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
-
+from sign.models import Event
 
 def index(request):           # 登录表单
     return render(request, "index.html")
@@ -23,6 +23,7 @@ def login_action(request):    # 登录动作
 
 
 @login_required
-def event_manage(request):
+def event_manage(request):   # 发布会管理
+    event_list = Event.objects.all()
     username = request.session.get('user', '')  # 读取浏览器session
-    return render(request, "event_manage.html", {"user": username})
+    return render(request, "event_manage.html", {"user": username,"events":event_list})
