@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
-from sign.models import Event
+from sign.models import Event, Guest
 
 
 def index(request):           # 登录表单
@@ -36,3 +36,10 @@ def search_name(request):  # 发布会名称搜索
     search_name = request.GET.get("name", "")
     event_list = Event.objects.filter(name__contains=search_name)
     return render(request, "event_manage.html", {"user": username, "events": event_list})
+
+
+@login_required
+def guest_manage(request):   # 嘉宾管理
+    username = request.session.get('user', '')
+    guest_list = Guest.objects.all()
+    return render(request, "guest_manage.html", {"user": username, "guests": guest_list})
