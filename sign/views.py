@@ -43,3 +43,6 @@ def guest_manage(request):   # 嘉宾管理
     username = request.session.get('user', '')
     guest_list = Guest.objects.all()
     return render(request, "guest_manage.html", {"user": username, "guests": guest_list})
+
+
+
