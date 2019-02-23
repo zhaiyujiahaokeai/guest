@@ -3,6 +3,7 @@ from django.http import HttpResponseRedirect
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
 from sign.models import Event, Guest
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 def index(request):           # 登录表单
@@ -42,7 +43,14 @@ def search_name(request):  # 发布会名称搜索
 def guest_manage(request):   # 嘉宾管理
     username = request.session.get('user', '')
     guest_list = Guest.objects.all()
-    return render(request, "guest_manage.html", {"user": username, "guests": guest_list})
-
-
-
+    paginator = Paginator(guest_list, 2)
+    page = request.GET.get('page')
+    try:
+        contacts = paginator.page(page)
+    except PageNotAnInteger:
+        # 如果page不是整数，取第一页面数据
+        contacts = paginator.page(1)
+    except EmptyPage:
+        # 如果page不在范围内，取最后一页面
+        contacts = paginator.page(paginator.num_pages)
+    return render(request, "guest_manage.html", {"user": username, "guests": contacts})
