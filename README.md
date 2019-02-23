@@ -11,3 +11,5 @@
     进行数据迁移（migrate）
     后台（admin）和shell命令操作发布会表和嘉宾表
     django配置mysql
+### 3.前端页面重开发
+    
