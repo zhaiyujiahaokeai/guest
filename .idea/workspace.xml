@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f51c3e4-463b-4e6c-afb0-cb012c3a6807" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sign/templates/sign_index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/guest/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign/templates/event_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/sign/templates/event_manage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sign/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sign/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sign/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+            <state relative-caret-position="464">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -54,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sign/templates/sign_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
+            <state relative-caret-position="741">
               <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -79,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/guest/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="17" selection-start-line="17" selection-end-line="30" selection-end-column="1" />
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="31" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -127,15 +125,15 @@
         <option value="$PROJECT_DIR$/guest/settings.py" />
         <option value="$PROJECT_DIR$/sign/templates/guest_manage.html" />
         <option value="$PROJECT_DIR$/sign/templates/event_manage.html" />
+        <option value="$PROJECT_DIR$/sign/templates/sign_index.html" />
         <option value="$PROJECT_DIR$/guest/urls.py" />
         <option value="$PROJECT_DIR$/sign/views.py" />
-        <option value="$PROJECT_DIR$/sign/templates/sign_index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-97" />
-    <option name="y" value="195" />
+    <option name="x" value="25" />
+    <option name="y" value="61" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
@@ -240,7 +238,7 @@
       <workItem from="1550623417685" duration="12772000" />
       <workItem from="1550725497592" duration="7170000" />
       <workItem from="1550811395762" duration="4734000" />
-      <workItem from="1550883357795" duration="9928000" />
+      <workItem from="1550883357795" duration="11107000" />
     </task>
     <task id="LOCAL-00001" summary="进一步完成数据库表设计">
       <created>1550626033311</created>
@@ -305,14 +303,21 @@
       <option name="project" value="LOCAL" />
       <updated>1550887494029</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="实现签到功能">
+      <created>1550901679610</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1550901679610</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80385000" />
+    <option name="totallyTimeSpent" value="81564000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-77" y="156" width="1400" height="784" extended-state="0" />
+    <frame x="20" y="49" width="1400" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2846498" />
@@ -372,7 +377,8 @@
     <MESSAGE value="进一步实现嘉宾列表功能" />
     <MESSAGE value="缩小发布会搜索和发布会列表之间的距离" />
     <MESSAGE value="嘉宾管理实现分页功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="嘉宾管理实现分页功能" />
+    <MESSAGE value="实现签到功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现签到功能" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/sign/__init__.py">
@@ -473,29 +479,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sign/templates/sign_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/guest/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="17" selection-start-line="17" selection-end-line="30" selection-end-column="1" />
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="31" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sign/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+        <state relative-caret-position="464">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sign/templates/sign_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
