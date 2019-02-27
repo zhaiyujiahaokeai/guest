@@ -87,3 +87,27 @@ class EventMangeTest(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn(b"xiaomi5", response.content)
         self.assertIn(b"beijing", response.content)
+
+
+class GuestManageTest(TestCase):
+    # 嘉宾管理
+    def setUp(self):
+        User.objects.create_user('admin', 'admin@mail.com', 'admin123456')
+        Event.objects.create(id=1, name="xiaomi5", limit=2000, address='beijing', status=1,
+                             start_time='2017-8-10 12:30:00')
+        Guest.objects.create(realname="alen", phone=18611001100, email='alen@mail.com', sign=0, event_id=1)
+        self.login_user = {'username': 'admin', 'password': 'admin123456'}
+
+    def test_event_mange_success(self):
+        # 测试嘉宾信息: alen
+        response = self.client.post('/guest_manage/')
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b"alen", response.content)
+        self.assertIn(b"18611001100", response.content)
+
+    def test_guest_mange_search_success(self):
+        # 测试嘉宾搜索
+        response = self.client.post('/search_phone/', {"phone": "18611001100"})
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b"alen", response.content)
+        self.assertIn(b"18611001100", response.content)
