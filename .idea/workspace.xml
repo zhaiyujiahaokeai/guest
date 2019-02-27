@@ -34,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/sign/tests.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="464">
-              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+              <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -75,8 +75,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="186" />
-    <option name="y" value="510" />
+    <option name="x" value="16" />
+    <option name="y" value="123" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
@@ -186,7 +186,7 @@
       <workItem from="1550969157743" duration="657000" />
       <workItem from="1550974528555" duration="2972000" />
       <workItem from="1551091642278" duration="667000" />
-      <workItem from="1551245795309" duration="5850000" />
+      <workItem from="1551245795309" duration="7678000" />
     </task>
     <task id="LOCAL-00001" summary="进一步完成数据库表设计">
       <created>1550626033311</created>
@@ -293,14 +293,21 @@
       <option name="project" value="LOCAL" />
       <updated>1551251084772</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="添加针对嘉宾管理的测试用例">
+      <created>1551255958562</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1551255958564</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93698000" />
+    <option name="totallyTimeSpent" value="95526000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="149" y="408" width="1400" height="784" extended-state="0" />
+    <frame x="13" y="99" width="1400" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30700448" />
@@ -406,7 +413,8 @@
     <MESSAGE value="添加针对index首页响应的测试用例" />
     <MESSAGE value="添加针对登录动作的测试用例" />
     <MESSAGE value="添加针对发布会管理的测试用例" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加针对发布会管理的测试用例" />
+    <MESSAGE value="添加针对嘉宾管理的测试用例" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加针对嘉宾管理的测试用例" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/sign/__init__.py">
@@ -524,7 +532,7 @@
     <entry file="file://$PROJECT_DIR$/sign/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
-          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
